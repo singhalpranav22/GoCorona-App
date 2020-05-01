@@ -20,12 +20,14 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
 
     Button btnSymptom, btnPrevention, btnResource, btnHelpline;
     Button btnGlobal;
-    TextView tvTotal, tvActive, tvDeath, tvRecovered;
+    TextView tvTotal, tvActive, tvDeath, tvRecovered,tvrrate,tvddrate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +42,23 @@ public class MainActivity extends AppCompatActivity {
         tvActive = findViewById(R.id.inActive);
         tvDeath = findViewById(R.id.inDeath);
         tvRecovered = findViewById(R.id.inRecovered);
+        tvrrate=findViewById(R.id.inRecoveryrate);
+        tvddrate=findViewById(R.id.inDeathrate);
         btnSymptom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent=new Intent(MainActivity.this,com.pranav.gocorona.symptoms.class);
+                startActivity(intent);
 
             }
         });
         btnHelpline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent=new Intent(MainActivity.this,com.pranav.gocorona.helplinenumbers.class);
+                startActivity(intent);
 
             }
         });
@@ -94,6 +104,23 @@ public class MainActivity extends AppCompatActivity {
                             tvTotal.setText(jsonObject.getString("Total Cases"));
                             tvDeath.setText(jsonObject.getString("Death"));
                             tvRecovered.setText(jsonObject.getString("Cured/Discharged/Migrated"));
+
+                            String r=jsonObject.getString("Cured/Discharged/Migrated");
+                            String d=jsonObject.getString("Death");
+                            float re=Float.parseFloat(r);
+                            float de=Float.parseFloat(d);
+                            float total=re+de;
+                            float rep=((re)*100)/total;
+                            float dep=((de)*100)/total;
+                            DecimalFormat df = new DecimalFormat("#.##");
+
+                            r=df.format(rep);
+                            d=df.format(dep);
+                            r=r+" %";
+                            d=d+" %";
+                            tvrrate.setText(r);
+                            tvddrate.setText(d);
+
 
 
                         } catch (JSONException e) {

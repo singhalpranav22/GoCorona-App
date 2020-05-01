@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#E2F5FF">
+    android:background="@drawable/mainbg">
 
 <ScrollView
     android:layout_width="fill_parent"
@@ -204,6 +204,125 @@ android:orientation="vertical">
 
     </LinearLayout>
     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:layout_marginBottom="0dp"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivDeath"
+                android:src="@drawable/death"
+                android:layout_centerInParent="true">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivDeath"
+                android:text="N/A"
+                android:id="@+id/inDeath"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ivDeath"
+                android:text="DEATHS"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivRecovered"
+                android:src="@drawable/recovered"
+                android:layout_centerInParent="true">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivRecovered"
+                android:text="N/A"
+                android:id="@+id/inRecovered"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ivRecovered"
+                android:text="RECOVERED"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="135dp"
         android:layout_marginBottom="10dp"
@@ -224,17 +343,17 @@ android:orientation="vertical">
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:id="@+id/ivDeath"
-                    android:src="@drawable/death"
+                    android:id="@+id/ivRrate"
+                    android:src="@drawable/rrrate"
                     android:layout_centerInParent="true">
 
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ivDeath"
+                    android:layout_below="@id/ivRrate"
                     android:text="N/A"
-                    android:id="@+id/inDeath"
+                    android:id="@+id/inRecoveryrate"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -248,8 +367,8 @@ android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@id/ivDeath"
-                    android:text="DEATHS"
+                    android:layout_above="@id/ivRrate"
+                    android:text="RECOVERY RATE"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -279,17 +398,17 @@ android:orientation="vertical">
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:id="@+id/ivRecovered"
-                    android:src="@drawable/recovered"
+                    android:id="@+id/ivDrate"
+                    android:src="@drawable/ddrate"
                     android:layout_centerInParent="true">
 
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ivRecovered"
+                    android:layout_below="@id/ivDrate"
                     android:text="N/A"
-                    android:id="@+id/inRecovered"
+                    android:id="@+id/inDeathrate"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -303,8 +422,8 @@ android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@id/ivRecovered"
-                    android:text="RECOVERED"
+                    android:layout_above="@id/ivDrate"
+                    android:text="DEATH RATE"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"

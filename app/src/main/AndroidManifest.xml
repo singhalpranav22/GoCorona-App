@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.pranav.gocorona">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
-        <activity android:name=".stats"></activity>
+        <activity android:name=".symptoms"></activity>
+        <activity android:name=".helplinenumbers" />
+        <activity android:name=".stats" />
         <activity android:name=".GlobalStats" />
 
         <meta-data
