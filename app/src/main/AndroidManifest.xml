@@ -15,7 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
-        <activity android:name=".symptoms"></activity>
+        <activity android:name=".preventcorona"></activity>
+        <activity
+            android:name=".preventions"
+            android:label="@string/title_activity_preventions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".resources" />
+        <activity android:name=".symptoms" />
         <activity android:name=".helplinenumbers" />
         <activity android:name=".stats" />
         <activity android:name=".GlobalStats" />
@@ -31,6 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".AffectedCountries" />
     </application>
 
 </manifest>

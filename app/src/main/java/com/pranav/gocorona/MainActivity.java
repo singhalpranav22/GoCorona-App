@@ -67,11 +67,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent=new Intent(MainActivity.this,com.pranav.gocorona.resources.class);
+                startActivity(intent);
             }
         });
         btnPrevention.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent=new Intent(MainActivity.this,com.pranav.gocorona.preventcorona.class);
+                startActivity(intent);
 
             }
         });

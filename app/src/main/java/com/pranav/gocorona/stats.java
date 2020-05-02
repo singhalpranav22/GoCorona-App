@@ -2,9 +2,11 @@ package com.pranav.gocorona;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +33,7 @@ public class stats extends AppCompatActivity {
     ScrollView scrollView;
     SimpleArcLoader simpleArcLoader;
     PieChart pieChart;
+    Button bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,17 @@ public class stats extends AppCompatActivity {
         scrollView=findViewById(R.id.scrollStats);
         pieChart=findViewById(R.id.piechart);
         simpleArcLoader=findViewById(R.id.loader);
+        bt=findViewById(R.id.btnTrack);
+
+
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(stats.this,com.pranav.gocorona.AffectedCountries.class);
+                startActivity(intent);
+            }
+        });
         fetchData();
 
     }

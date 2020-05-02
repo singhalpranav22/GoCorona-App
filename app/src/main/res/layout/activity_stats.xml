@@ -128,6 +128,7 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/cardViewgraph"
+        android:layout_above="@id/btnTrack"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
@@ -143,7 +144,7 @@
                 android:layout_centerInParent="true"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:arc_style="simple_arc"
+                app:arc_style="complete_arc"
                 >
             </com.leo.simplearcloader.SimpleArcLoader>
 
@@ -592,7 +593,18 @@
     </androidx.cardview.widget.CardView>
 
 
-
+    <Button
+        android:id="@+id/btnTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/color_two"
+        android:layout_marginBottom="20dp"
+        android:text="TRACK COUNTRY WISE"
+        android:textSize="20sp"
+        android:padding="5sp" />
 
 
 

@@ -2,9 +2,11 @@ package com.pranav.gocorona;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,10 +29,12 @@ import java.text.DecimalFormat;
 
 public class GlobalStats extends AppCompatActivity {
 
-    TextView tvCases,tvRecovered,tvCritical,tvActive,tvToday,tvDeaths,tvtodayDeaths,tvAffected,tvTests,tvRep,tvDep;
+    TextView tvCases,tvRecovered,tvCritical,tvActive,tvToday,tvDeaths,tvtodayDeaths,tvAffected,tvTests,tvRep,tvDep,btt;
     ScrollView scrollView;
 //    SimpleArcLoader simpleArcLoader;
     PieChart pieChart;
+    Button bttt;
+    Button bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,30 @@ public class GlobalStats extends AppCompatActivity {
         tvAffected=findViewById(R.id.tvAffected);
         scrollView=findViewById(R.id.scrollStats);
         pieChart=findViewById(R.id.piechart);
+
+
+        bttt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(GlobalStats.this,com.pranav.gocorona.AffectedCountries.class);
+                startActivity(intent);
+            }
+        });
+        btt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(GlobalStats.this,com.pranav.gocorona.AffectedCountries.class);
+                startActivity(intent);
+            }
+        });
+        pieChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(GlobalStats.this,com.pranav.gocorona.AffectedCountries.class);
+                startActivity(intent);
+            }
+        });
 //        simpleArcLoader=findViewById(R.id.loader);
         fetchData();
 
