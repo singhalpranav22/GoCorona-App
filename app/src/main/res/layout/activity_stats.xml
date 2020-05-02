@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_white"
+    android:background="@drawable/globalbg"
     tools:context=".MainActivity">
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewgraph"
@@ -13,7 +15,9 @@
         android:layout_height="200dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:layout_above="@id/btnTrack"
         android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:elevation="40dp"
         app:cardCornerRadius="5dp">
         <LinearLayout
@@ -123,12 +127,11 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/cardViewgraph"
-        android:layout_above="@id/btnTrack"
+        android:layout_above="@id/cardViewgraph"
+
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
@@ -591,6 +594,7 @@
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 
     <Button

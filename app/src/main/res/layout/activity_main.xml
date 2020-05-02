@@ -45,6 +45,8 @@ android:orientation="vertical">
             android:layout_gravity="center"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+
             android:layout_weight="1"
             app:cardCornerRadius="0dp">
 
@@ -65,6 +67,7 @@ android:orientation="vertical">
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ivIndia"
                     android:text="REAL TIME INDIAN STATISTICS"
+                    android:textColor="@color/color_one"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -96,6 +99,7 @@ android:orientation="vertical">
             android:layout_gravity="center"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -116,6 +120,7 @@ android:orientation="vertical">
                     android:layout_below="@id/ivTotal"
                     android:text="N/A"
                     android:id="@+id/inTotal"
+                    android:textColor="@color/color_one"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -133,6 +138,7 @@ android:orientation="vertical">
                     android:text="TOTAL CASES"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="@color/color_one"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
@@ -150,7 +156,8 @@ android:orientation="vertical">
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -171,6 +178,7 @@ android:orientation="vertical">
                     android:layout_below="@id/ivActive"
                     android:text="N/A"
                     android:id="@+id/inActive"
+                    android:textColor="@color/color_one"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -188,6 +196,7 @@ android:orientation="vertical">
                     android:text="ACTIVE CASES"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="@color/color_one"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
@@ -215,6 +224,7 @@ android:orientation="vertical">
         android:layout_gravity="center"
         android:layout_marginRight="0dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_weight="1">
 
         <RelativeLayout
@@ -237,6 +247,7 @@ android:orientation="vertical">
                 android:id="@+id/inDeath"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="@color/color_one"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp">
@@ -252,6 +263,7 @@ android:orientation="vertical">
                 android:text="DEATHS"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="@color/color_one"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp">
@@ -269,7 +281,8 @@ android:orientation="vertical">
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginRight="5dp"
-        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_weight="1">
 
         <RelativeLayout
@@ -290,6 +303,7 @@ android:orientation="vertical">
                 android:layout_below="@id/ivRecovered"
                 android:text="N/A"
                 android:id="@+id/inRecovered"
+                android:textColor="@color/color_one"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
@@ -306,6 +320,7 @@ android:orientation="vertical">
                 android:layout_above="@id/ivRecovered"
                 android:text="RECOVERED"
                 android:textSize="18sp"
+                android:textColor="@color/color_one"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
@@ -332,8 +347,9 @@ android:orientation="vertical">
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginRight="0dp"
+            android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -353,8 +369,9 @@ android:orientation="vertical">
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ivRrate"
                     android:text="N/A"
+                    android:textColor="@color/color_one"
                     android:id="@+id/inRecoveryrate"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
@@ -369,7 +386,8 @@ android:orientation="vertical">
                     android:layout_height="wrap_content"
                     android:layout_above="@id/ivRrate"
                     android:text="RECOVERY RATE"
-                    android:textSize="18sp"
+                    android:textColor="@color/color_one"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
@@ -388,6 +406,7 @@ android:orientation="vertical">
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="0dp"
             android:layout_weight="1">
 
@@ -409,8 +428,9 @@ android:orientation="vertical">
                     android:layout_below="@id/ivDrate"
                     android:text="N/A"
                     android:id="@+id/inDeathrate"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
+                    android:textColor="@color/color_one"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
@@ -424,8 +444,9 @@ android:orientation="vertical">
                     android:layout_height="wrap_content"
                     android:layout_above="@id/ivDrate"
                     android:text="DEATH RATE"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
+                    android:textColor="@color/color_one"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
@@ -453,6 +474,7 @@ android:orientation="vertical">
             android:layout_gravity="center"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
+            app:cardCornerRadius="40dp"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -475,6 +497,7 @@ android:orientation="vertical">
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
+                    android:textColor="@color/color_one"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
 
@@ -507,6 +530,7 @@ android:orientation="vertical">
             android:layout_gravity="center"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
+            app:cardCornerRadius="20dp"
             android:layout_weight="1">
             
             <RelativeLayout
@@ -527,6 +551,7 @@ android:orientation="vertical">
                     android:layout_below="@id/ivSymptoms"
                     android:text="SYMPTOMS"
                     android:textSize="18sp"
+                    android:textColor="@color/color_one"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
@@ -551,6 +576,7 @@ android:orientation="vertical">
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            app:cardCornerRadius="20dp"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -572,6 +598,7 @@ android:orientation="vertical">
                     android:text="PREVENTIONS"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="@color/color_one"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
@@ -603,6 +630,7 @@ android:orientation="vertical">
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginRight="5dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="1">
 
@@ -623,6 +651,7 @@ android:orientation="vertical">
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ivResources"
                     android:text="RESOURCES"
+                    android:textColor="@color/color_one"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerHorizontal="true"
@@ -647,6 +676,7 @@ android:orientation="vertical">
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1">
 
@@ -669,6 +699,7 @@ android:orientation="vertical">
                     android:text="HELPLINE"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="@color/color_one"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
@@ -686,6 +717,64 @@ android:orientation="vertical">
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="40dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/ivAbout"
+                    android:src="@drawable/about"
+                    android:layout_centerInParent="true">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivAbout"
+                    android:text="ABOUT"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_one"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+
+
+                </TextView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnFinal"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
 
     </LinearLayout>

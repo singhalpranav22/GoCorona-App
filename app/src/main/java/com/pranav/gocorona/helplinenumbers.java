@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class helplinenumbers extends AppCompatActivity {
     TextView tvTollfree,tvhelpline,tvSurvey,tvEmailid;
@@ -73,8 +74,15 @@ public class helplinenumbers extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(Intent.ACTION_SEND,Uri.parse("mailto:ncov2019@gov.in"));
-                startActivity(intent);
+                try {
+                    Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "ncov20190@gov.in"));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, "Regarding:I need Help related to Covid-19.");
+                    intent.putExtra(Intent.EXTRA_TEXT, "Give COVID-19 Help Description:");
+                    startActivity(intent);
+                } catch(Exception e) {
+                    Toast.makeText(helplinenumbers.this, "SORRY,YOU DON'T HAVE A MAILING APP :(", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
             }
         });
 

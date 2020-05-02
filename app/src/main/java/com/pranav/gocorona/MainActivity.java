@@ -25,7 +25,7 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button btnSymptom, btnPrevention, btnResource, btnHelpline;
+    Button btnSymptom, btnPrevention, btnResource, btnHelpline,btnAbout;
     Button btnGlobal;
     TextView tvTotal, tvActive, tvDeath, tvRecovered,tvrrate,tvddrate;
 
@@ -44,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
         tvRecovered = findViewById(R.id.inRecovered);
         tvrrate=findViewById(R.id.inRecoveryrate);
         tvddrate=findViewById(R.id.inDeathrate);
+        btnAbout=findViewById(R.id.btnFinal);
+
+
+        btnAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(MainActivity.this,com.pranav.gocorona.about.class);
+                startActivity(intent);
+            }
+        });
         btnSymptom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
