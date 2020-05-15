@@ -1,8 +1,7 @@
 # **GoCorona -App**
 
 ## INTRODUCTION
-
-![Logo](image/icon.png)
+<center><img src="image/icon.png" height=100 width=100></center>
 
 **GoCorona** is an Android App that lets you know the Current Statistics and a lot of other information to safely combat the Invisible enemy of our society.
 ___
