@@ -2,7 +2,7 @@
 
 ## INTRODUCTION
 
-![Logo](https://drive.google.com/file/d/1Ov0bx6Q0uYgH2zXnPNZxnqFNmiutg-6Z/view?usp=sharing)
+![Logo](image/icon.png)
 
 **GoCorona** is an Android App that lets you know the Current Statistics and a lot of other information to safely combat the Invisible enemy of our society.
 ___
