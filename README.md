@@ -8,11 +8,17 @@ ___
 ## APK LINK:
 [APK](https://drive.google.com/open?id=1Jt4Sax6CKOfmSmFyein5sp1Ovy4ZqeHe)
 
+___
+## PROJECT REPORT:
+[PROJECT REPORT](https://drive.google.com/file/d/1qyskP9Zq2pgxMLFcie7Yy-4lRFCbD8hQ/view?usp=sharing)
+___
+
+
 ## FEATURES:
 
->1. Live Covid-19 Statistics
->1. Information to combat Covid-19
->1. Live Country Wise Covid-19 Data
+>1. **Live** Covid-19 Statistics
+>1. **Information** to combat Covid-19
+>1. **Live** Country Wise Covid-19 Data
 ___
 
 ## VIDEO WALKTHROUGH:
